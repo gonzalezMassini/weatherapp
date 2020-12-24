@@ -16,6 +16,14 @@ const WeatherApp = () => {
       setInput('');
     }
   };
+  const handleClick = () => {
+    fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=${input}&APPID=de04cbd27ff60fc38b11760da153f2bb`
+    )
+      .then((res) => res.json())
+      .then((result) => setData(result));
+    setInput('');
+  };
   const handleF = () => {
     setIsCelsius(false);
   };
@@ -37,7 +45,7 @@ const WeatherApp = () => {
           }}
         />
       </p>
-      <button className='btn' onClick={handleKeyPress}>
+      <button type='submit' className='btn' onClick={() => handleClick()}>
         search weather
       </button>
       <h1>{date}</h1>
