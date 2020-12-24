@@ -32,6 +32,7 @@ body {
   padding: 15px;
   font-size: 24px;
   border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.514);
 }
 .btn {
   padding: 10px;
@@ -41,4 +42,20 @@ body {
 .toggleTemp {
   margin-top: 2em;
   font-weight: bold;
+}
+.title {
+  text-decoration: none;
+  color: black;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.togglebtn:hover {
+  cursor: pointer;
+}
+.togglebtn:active {
+  background-color: gray;
+}
+.btn:active {
+  background-color: gray;
 }
