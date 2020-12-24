@@ -6,8 +6,36 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.weather {
+  text-align: center;
+}
+.temp {
+  /* background-color: gray; */
+  width: min-content;
+  margin: auto;
+  font-size: 48px;
+  border-radius: 5px;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  padding: 15px 25px;
+
+  color: rgb(0, 0, 0);
+  font-size: 102px;
+  font-weight: 900;
+
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.inputWeather {
+  width: 30em;
+  padding: 15px;
+  font-size: 24px;
+}
+.btn {
+  padding: 10px;
+  font-size: 20px;
+}
+.toggleTemp {
+  margin-top: 2em;
+  font-weight: bold;
 }
