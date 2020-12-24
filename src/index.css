@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(128, 128, 128, 0.377);
 }
 .weather {
   text-align: center;
@@ -24,16 +25,18 @@ body {
 
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
   text-align: center;
-  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.5);
 }
 .inputWeather {
   width: 30em;
   padding: 15px;
   font-size: 24px;
+  border-radius: 5px;
 }
 .btn {
   padding: 10px;
   font-size: 20px;
+  border-radius: 5px;
 }
 .toggleTemp {
   margin-top: 2em;
