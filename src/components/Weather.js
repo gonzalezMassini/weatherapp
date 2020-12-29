@@ -2,7 +2,7 @@ import React from 'react';
 
 const Weather = ({ data, isCelsius, handleC, handleF }) => {
   return (
-    <div>
+    <div className='weatherContainer'>
       {typeof data.main != 'undefined' ? (
         <div>
           <div className='location-box'>
