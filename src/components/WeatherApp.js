@@ -23,11 +23,9 @@ const WeatherApp = () => {
     getData();
   };
   const handleF = () => {
-    setIsCelsius(false);
+    setIsCelsius(!isCelsius);
   };
-  const handleC = () => {
-    setIsCelsius(true);
-  };
+
   return (
     <div className='weather'>
       <Form
@@ -37,12 +35,7 @@ const WeatherApp = () => {
         handleClick={handleClick}
         date={date}
       />
-      <Weather
-        data={data}
-        isCelsius={isCelsius}
-        handleC={handleC}
-        handleF={handleF}
-      />
+      <Weather data={data} isCelsius={isCelsius} handleF={handleF} />
     </div>
   );
 };

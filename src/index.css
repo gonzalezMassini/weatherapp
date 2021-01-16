@@ -12,7 +12,14 @@ body {
   text-align: center;
 }
 .weatherContainer {
-  width: 100%;
+  width: 90%;
+  max-width: 30em;
+  box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: 0 auto;
+  border-radius: 1em;
+  padding-top: 1em;
+  margin-bottom: 1em;
 }
 .temp {
   /* background-color: gray; */
@@ -41,13 +48,35 @@ body {
   background-color: rgba(255, 255, 255, 0.514);
 }
 .btn {
-  padding: 10px;
+  /* padding: 10px;
   font-size: 20px;
-  border-radius: 5px;
-}
-.toggleTemp {
-  margin-top: 2em;
+  border-radius: 5px; */
+  padding: 0.3em;
+  box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
   font-weight: bold;
+  border-radius: 0.25em;
+}
+
+.toggleTemp {
+  width: max-content;
+  display: block;
+  margin: 2em auto;
+}
+.toggleTemp button {
+  padding: 0.3em;
+  box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 0.25em;
+  background-color: rgba(128, 128, 128, 0.171);
+}
+.toggleTemp button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.329);
+}
+.toggleTemp button:active {
+  background-color: rgba(255, 0, 0, 0.329);
 }
 .title {
   text-decoration: none;
@@ -57,9 +86,13 @@ body {
   .title {
     font-size: 0.7rem;
   }
+  .date {
+    font-size: 1.5rem;
+  }
 }
 .btn:hover {
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.329);
 }
 .togglebtn:hover {
   cursor: pointer;
@@ -68,5 +101,5 @@ body {
   background-color: gray;
 }
 .btn:active {
-  background-color: gray;
+  background-color: rgba(255, 0, 0, 0.329);
 }

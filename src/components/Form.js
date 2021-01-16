@@ -19,9 +19,9 @@ const Form = ({ handleKeyPress, input, setInput, handleClick, date }) => {
         />
       </p>
       <button type='submit' className='btn' onClick={() => handleClick()}>
-        search weather
+        Search Weather
       </button>
-      <h1>{date}</h1>
+      <h1 className='date'>{date}</h1>
     </div>
   );
 };
